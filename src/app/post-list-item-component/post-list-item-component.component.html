@@ -1,0 +1,14 @@
+<li [ngClass]="{'list-group-item': true,
+               'list-group-item-success' : post.loveIts > post.dontLoveIts,
+               'list-group-item-danger' : post.loveIts < post.dontLoveIts}">
+  <div class="row">
+    <div class="col-lg-6">
+      <h2><strong>{{ post.title }}</strong></h2></div>
+    <div style="text-align:right" class="col-lg-6"><small>{{ post.created_at | date: 'dd/MM/yyyy, hh:mm a' | uppercase }}</small></div>
+  </div>
+  <br />
+  <p *ngFor = "let content of post.contents" class="mb-1">{{ content }}<br /></p>
+  <br />
+  <button class="btn btn-success" (click)="onLoveIt()">Love it!</button>
+  <button class="btn btn-danger" (click)="onDontLoveIt()">Don't love it!</button>
+</li>
