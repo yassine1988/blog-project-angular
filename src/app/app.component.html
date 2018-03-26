@@ -1,11 +1,7 @@
+<app-header></app-header>
+<br /><br />
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
-      <h1><strong>Posts</strong></h1>
-      <ul class="list-group">
-        <app-post-list-item-component *ngFor = "let post of posts"
-          [post]="post"></app-post-list-item-component>
-      </ul>
-    </div>
+    <router-outlet></router-outlet>
   </div>
 </div>
