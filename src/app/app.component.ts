@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import * as firebase from 'firebase';
 
-import { POSTS } from './mocks/mock-posts-items';
 import { Post } from './models/post.model';
 
 @Component({

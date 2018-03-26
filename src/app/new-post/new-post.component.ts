@@ -5,11 +5,11 @@ import { PostsService } from '../services/posts.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-post-form',
-  templateUrl: './post-form.component.html',
-  styleUrls: ['./post-form.component.scss']
+  selector: 'app-new-post',
+  templateUrl: './new-post.component.html',
+  styleUrls: ['./new-post.component.scss']
 })
-export class PostFormComponent implements OnInit {
+export class NewPostComponent implements OnInit {
 
   postForm: FormGroup;
 
